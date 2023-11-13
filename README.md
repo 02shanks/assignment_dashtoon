@@ -2,7 +2,9 @@
 
 ## Architecture
 
-! [Model Architecture](images/model_architecture.png)
+Gatys et al.'s neural algorithm necessitates a slow, iterative optimization process, limiting its practical application. While fast approximations with feed-forward neural networks have been proposed to accelerate neural style transfer, they often sacrifice adaptability to arbitrary new styles for speed. Here we use a simple yet effective method that enables real-time arbitrary style transfer. At its core is an adaptive instance normalization (AdaIN) layer that aligns the mean and variance of content features with those of style features. This achieves comparable speed to the fastest existing methods, eliminating the need for a pre-defined set of styles. Furthermore, it offers flexible user controls, including content-style trade-off, style interpolation, color, and spatial adjustments—all achievable through a single feed-forward neural network.
+
+[Model Architecture](images/model_architecture.png)
 
 
 ## Library Used
