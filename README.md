@@ -1,5 +1,20 @@
 # Neural Style Transfer (assignment_dashtoon)
 
+## Library Used
+matplotlib
+numpy
+pathlib
+PIL
+tensorboardX
+torch
+torchvision
+tqdm
+
+# Requirements
+```
+!pip install -r requirements.txt
+```
+
 ## Code
 
 In the provided notebook, we start by training the VGG model backbone and then train the decoder model using the NST method described earlier. This two-step process ensures a comprehensive training approach for our model.
