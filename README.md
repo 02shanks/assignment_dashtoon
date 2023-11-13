@@ -6,9 +6,10 @@ In the provided notebook, we start by training the VGG model backbone and then t
 
 ## Training
 
-For training, we use a pretrained VGG encoder due to storage and compute limitations. The decoder architecture is trained on a small dataset with content and style images. However, the network's potential can be further enhanced by training on larger datasets, like MS-COCO for content and a painting dataset from WikiArt for styles, each containing around 80,000 training examples. We employ the Adam optimizer with a batch size of 8 content-style image pairs.
+For training, we currently use a pretrained VGG encoder. Due to storage and compute limitations, decoder architecture is trained on a small dataset with content and style images. However, there's potential to enhance our network by training on larger datasets, such as using MS-COCO for content and a painting dataset mainly sourced from WikiArt for styles. Each dataset contains around 80,000 training examples. We employ the Adam optimizer with a batch size of 8 content-style image pairs.
 
-During training, images are resized by setting the smallest dimension to 512, maintaining the aspect ratio. Subsequently, random crops of size 256 × 256 are taken. Notably, our fully convolutional network can be applied to images of any size during testing, ensuring adaptability for different dimensions.
+During training, we resize both images by setting the smallest dimension to 512 while maintaining the aspect ratio. Subsequently, we randomly crop regions of size 256 × 256. It's worth noting that our fully convolutional network can be applied to images of any size during testing. This approach ensures flexibility and adaptability for different image dimensions.
+
 
 
 ## Run Test
