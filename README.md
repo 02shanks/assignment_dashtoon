@@ -1,8 +1,13 @@
 # Neural Style Transfer (assignment_dashtoon)
 
+## Architecture
+
+! [Model Architecture](images/model_architecture.png)
+
+
 ## Library Used
 
-'''
+```
 matplotlib
 numpy
 pathlib
@@ -11,7 +16,7 @@ tensorboardX
 torch
 torchvision
 tqdm
-'''
+```
 
 # Requirements
 ```
@@ -32,7 +37,13 @@ During training, we resize both images by setting the smallest dimension to 512 
 
 ## Run Test
 
-In the "nst_train_inference" section of the notebook, execute all cells except for the "train" cell. After completing the tests, you'll receive the respective output for the specified input variables—“content” and “style”. Feel free to change input content and style to explore the full potential of our model.
+In the ```nst_train_inference``` section of the notebook, execute all cells except for the ```train``` cell. After completing the ```tests```, you'll receive the respective output for the specified input variables—```content``` and ```style```. Feel free to change input content and style to explore the full potential of our model.
+
+## Download models
+
+Download [decoder.pth](https://drive.google.com/file/d/1bMfhMMwPeXnYSQI6cDWElSZxOxc6aVyr/view?usp=sharing)/[vgg_normalized.pth](https://drive.google.com/file/d/1EpkBA2K2eYILDSyPTt0fztz59UjAIpZU/view?usp=sharing). 
+
+##### Note: In notebook provided, weights get downloaded itself and used for prediction.
 
 ## Results
 
@@ -54,6 +65,6 @@ Future research endeavors aim to explore more advanced network architectures, in
 
 ## Reference
 
-![Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization ](https://arxiv.org/abs/1703.06868)
+[Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization ](https://arxiv.org/abs/1703.06868)
 Xun Huang, Serge Belongie  
 ICCV 2017 (Oral)
