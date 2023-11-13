@@ -1,6 +1,8 @@
 # Neural Style Transfer (assignment_dashtoon)
 
 ## Library Used
+
+'''
 matplotlib
 numpy
 pathlib
@@ -9,6 +11,7 @@ tensorboardX
 torch
 torchvision
 tqdm
+'''
 
 # Requirements
 ```
